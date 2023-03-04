@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 04 Mar 2023 13:54:18 at https://daynightonline.in/ticket100010.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://daynightonline.in/ticket100010.html -O1 "C:\My Web Sites\TAMOBLA" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:55:07	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://pngimg.com/uploads/share/small/share_PNG20.png (from https://daynightonline.in/ticket100010.html)
+13:55:13	Warning: 	Found for https://daynightonline.in/
+13:55:13	Warning: 	File has moved from https://daynightonline.in/ to ticket100010.html
+13:55:13	Error: 	"Not Found" (404) at link https://starttambola.com/ticketImg/-src-.png (from https://daynightonline.in/ticket100010.html)
+13:55:16	Warning: 	Retry after error -5 (error:00000001:lib(0):func(0):reason(1)) at link https://pngimg.com/uploads/share/small/share_PNG20.png (from https://daynightonline.in/ticket100010.html)
+13:55:33	Error: 	"error:00000001:lib(0):func(0):reason(1)" (-5) after 2 retries at link https://pngimg.com/uploads/share/small/share_PNG20.png (from https://daynightonline.in/ticket100010.html)
+13:55:33	Warning: 	Retry after error -4 (No data (connection closed)) at link https://daynightonline.in/Ui/adminUi/php/searchAgent.php (from https://daynightonline.in/Ui/adminUi/js/home.js?v=77)
+13:55:33	Warning: 	Retry after error -4 (No data (connection closed)) at link https://daynightonline.in/Ui/adminUi/php/getAnouncement.php (from https://daynightonline.in/Ui/adminUi/js/home.js?v=77)
+13:55:33	Warning: 	Retry after error -4 (No data (connection closed)) at link https://daynightonline.in/Ui/adminUi/php/saveAnnouncement.php (from https://daynightonline.in/Ui/adminUi/js/home.js?v=77)
+13:55:34	Error: 	"Not Found" (404) at link https://daynightonline.in/Ui/agentUi/php/saveJsonFile.php (from https://daynightonline.in/Ui/agentUi/js/home.js?v=53)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 16 seconds : 99 links scanned, 89 files written (4839002 bytes overall) [3195357 bytes received at 42044 bytes/sec], 1804497 bytes transferred using HTTP compression in 72 files, ratio 5%, 3.9 requests per connection
+(3 errors, 7 warnings, 0 messages)

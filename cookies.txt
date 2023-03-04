@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+daynightonline.in	TRUE	/	FALSE	1999999999	PHPSESSID	e09212dfa5c1862e399fc7081e08043b
+
