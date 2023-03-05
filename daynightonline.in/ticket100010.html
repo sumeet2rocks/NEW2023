@@ -1,4 +1,4 @@
-<script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 
@@ -7,17 +7,17 @@
 
 <div class="titleDiv" >
     <img class="titleImgL" style="display: none;" src="http://starttambola.com/publish/themeStore/db/1000/img"/>
-    <img class="titleImgR" style="display: none;" src="../www.fun-lover.com/mirrors/0i4i/theme/west2/png/hdrs1.png"/>
+    <img class="titleImgR" style="display: none;" src="http://www.fun-lover.com/mirrors/0i4i/theme/west2/png/hdrs1.png"/>
     <button class="titleBtn" id="titleBtn" style="background: rgb(255, 0, 221);display: none;"></button>
 </div>
-<img class="bannerImg" src="Ui/imgAsset/bannerbea6.png?v=7"/>
+<img class="bannerImg" src="Ui/imgAsset/banner.png?v=7"/>
 <br>
 <br>
 <div class="actionBtnDiv">
-    <img class="actionImg" onclick='callAdmin();' src="../starttambola.com/publish/themeStore/db/100009/img/call.png"/>
-    <img class="actionImg" onclick='jointWp()' src="../starttambola.com/publish/themeStore/db/100009/img/wp.png"/>
-    <img class="actionImg" onclick='document.getElementById("agentListPopWindowOverlay").style.display="block";getAgentList()' src="../starttambola.com/publish/themeStore/db/100009/img/agent.png"/>
-    <img class="actionImg" onclick='document.getElementById("loginDiv").style.display="block";' src="../starttambola.com/publish/themeStore/db/100009/img/login.png"/>
+    <img class="actionImg" onclick='callAdmin();' src="http://starttambola.com/publish/themeStore/db/100009/img/call.png"/>
+    <img class="actionImg" onclick='jointWp()' src="http://starttambola.com/publish/themeStore/db/100009/img/wp.png"/>
+    <img class="actionImg" onclick='document.getElementById("agentListPopWindowOverlay").style.display="block";getAgentList()' src="http://starttambola.com/publish/themeStore/db/100009/img/agent.png"/>
+    <img class="actionImg" onclick='document.getElementById("loginDiv").style.display="block";' src="http://starttambola.com/publish/themeStore/db/100009/img/login.png"/>
 </div>
 <br>
 <table class="titleDiv" style="background: #b13cf000;display: none;">
@@ -124,13 +124,13 @@
 
 <!----------------------------notice overlay-->
 <div class="noticeOverlayDiv" id="noticeOverlayDiv" style="display: block;">
-    <img class="anounceImg" style="display: none;" src="../starttambola.com/publish/themeStore/db/100008/img/bg.png"/>
+    <img class="anounceImg" style="display: none;" src="http://starttambola.com/publish/themeStore/db/100008/img/bg.png"/>
     <div class="noticeDiv" >
         <h1>!!ANOUNCEMENT!!</h1>
         Tambola game can be addictive,player please play with caution. <br>
          Incase of system failure during the game there will be re-game.<br>
           In case of re-draw, ticket can not be cancelled.
-          <br>This website is starttambola.com certified and its a legit website.<br> Check certificate by clicking  <a style="text-decoration: none;color:white;" href="http://oncdigital.in/checkLegitimacy/home.html?domain=daynightonline.in">here</a><br>
+          <br>This website is starttambola.com certified and its a legit website.<br> Check certificate by clicking  <a style="text-decoration: none;color:white;" href="checkLegitimacy.php">here</a><br>
     <button class="iAcceptBtn" onclick='document.getElementById("noticeOverlayDiv").style.display="none";iaccept();' >I ACCEPT</button>
     </div>
 </div>
@@ -138,12 +138,12 @@
 <!--------------------book btn-->
 <button class="bookFloatBtn" id="bookFloatBtn" onclick='document.getElementById("bookingDashboardOverlayDiv").style.display="block";' style="display: none;">BOOK TICKET</button>
 
-<img class="shareImg" onclick="share()" src="../pngimg.com/uploads/share/small/share_PNG20.png"/>
+<img class="shareImg" onclick="share()" src="https://pngimg.com/uploads/share/small/share_PNG20.png"/>
 
 <div class="loginDiv" id="loginDiv" style="display: none;">
     <button class="titleBtn">Select login type</button>
-    <button class="inp" onclick='window.location="Ui/adminUi/index.html";'>Login as admin</button>
-    <button class="inp" onclick='window.location="Ui/agentUi/index.html";'>Login as agent</button>
+    <button class="inp" onclick='window.location="Ui/adminUi";'>Login as admin</button>
+    <button class="inp" onclick='window.location="Ui/agentUi";'>Login as agent</button>
     <button class="inp" onclick='document.getElementById("loginDiv").style.display="none";' style="color: white;background: rgba(0,0,0,0);">Cancell</button>
 </div>
 
@@ -181,15 +181,15 @@
 
 <div class="loginDiv" id="loginDiv" style="display: none;">
     <button class="titleBtn">Select login type</button>
-    <button class="inp" onclick='window.location="Ui/adminUi/index.html";'>Login as admin</button>
-    <button class="inp" onclick='window.location="Ui/agentUi/index.html";'>Login as agent</button>
+    <button class="inp" onclick='window.location="Ui/adminUi";'>Login as admin</button>
+    <button class="inp" onclick='window.location="Ui/agentUi";'>Login as agent</button>
     <button class="inp" onclick='document.getElementById("loginDiv").style.display="none";' style="color: white;background: rgba(0,0,0,0);">Cancell</button>
 </div>
 
 
 <!-----------------anoounce div-->
 <div class="noticeOverlayDiv" id="anounceOverlayDiv" style="background: rgba(0, 0, 0, 0);display: none;">
-    <img class="anounceImg" style="display: none;" src="../starttambola.com/publish/themeStore/db/100008/img/bg.png"/>
+    <img class="anounceImg" style="display: none;" src="http://starttambola.com/publish/themeStore/db/100008/img/bg.png"/>
     <div class="noticeDiv" id="announcementTxtDiv" >
        
         <!-----dynamic content-->
@@ -375,7 +375,7 @@ var selectedTkt=new Array();
         getBookingStatistic();
     },5000);
 function getBookingStatistic(){
-    $.get('Ui/userUi/php/getBookingStatistic.html',
+    $.get('Ui/userUi/php/getBookingStatistic.php',
     {},
     function(data){
 console.log("booking statistic===>"+data);
@@ -393,7 +393,7 @@ getAnouncement();
    }
 
    function getAnouncement(){
-    $.get('Ui/userUi/php/getAnnouncement.html',
+    $.get('Ui/userUi/php/getAnnouncement.php',
     {},
     function(data){
 //console.log("anouncement==>"+data);
@@ -412,13 +412,13 @@ function closeAnnouncement(){
     anounceOverlayDiv.style.display="none";
 }
     function share(){
-        var domain=window.location.href.split("index.html")[2];
+        var domain=window.location.href.split("/")[2];
         window.location="whatsapp://send?phone="+gameStatusJSON.phone+"&text=Hi! friends let play online tambola game on this amazing website "+domain;
     }
 
     function getGameStatus(){
 
-        $.get('api/gameApi/getGameStatus.html',
+        $.get('api/gameApi/getGameStatus.php',
         {},
         function(data){
 //console.log(data);
@@ -446,7 +446,7 @@ timeTxt.innerHTML=timeOnly;
 
 if(gameJson.gameStatus!=localStorage.getItem("gameStatus") && gameJson.gameStatus!=""){
        if(gameJson.gameStatus=="GAME NOT STARTED"){
-       var audio=new Audio("tambolaCallMp3/please%20book%20ticket.mp3");
+       var audio=new Audio("tambolaCallMp3/please book ticket.mp3");
                 audio.play();
                 localStorage.setItem("gameStatus",gameJson.gameStatus);
                                                    }
@@ -462,7 +462,7 @@ if(gameJson.gameStatus!=localStorage.getItem("gameStatus") && gameJson.gameStatu
 function loadAvailebleTicket(){
     console.log("load available tickets");
     document.getElementById("bookingDashboardOverlayDiv").style.display="block";
-    $.get('Ui/userUi/php/getAvailableTicket.html',
+    $.get('Ui/userUi/php/getAvailableTicket.php',
     {},
     function(data){
 tickeBooktDiv.innerHTML=data;
@@ -516,7 +516,7 @@ window.location="whatsapp://send?phone="+gameJson.phone+"&text=Hi! i am "+nameIn
 function getAgentList(){
 
 
-    $.get('Ui/userUi/php/getAgentList.html',
+    $.get('Ui/userUi/php/getAgentList.php',
         {},
         function(data){
 //console.log(data);
@@ -532,7 +532,7 @@ agentListDiv.innerHTML=agentListDiv.innerHTML+'<button class="agentNameBtn" id="
 }
 
 function wp(phone){
-    var domain=window.location.href.split("index.html")[2];
+    var domain=window.location.href.split("/")[2];
     window.location="whatsapp://send?phone="+phone+"&text=Hi! i have some queries regarding tambola game of "+domain;
 }
 
@@ -569,13 +569,13 @@ var num=1;
     '<div class="tickeBtnCon" >';
 
 
-        html2='   <img style="width: 100%;" src="../starttambola.com/ticketImg/-src-.html"/>';
+        html2='   <img style="width: 100%;" src="https://starttambola.com/ticketImg/-src-.png"/>';
 
 var html3=    '</div>'+
     '<br>'+
 '</div>';
 
-    $.get('Ui/userUi/php/searchAllTicket.html',
+    $.get('Ui/userUi/php/searchAllTicket.php',
         {"html1":html1,"html2":html2,"html3":html3},
         function(data){
 //console.log(data);
@@ -689,7 +689,7 @@ window.location="whatsapp://send?phone="+gameStatusJSON.phone+"&text=Hi! I want 
 
 
    function checkGameStatus(){
-       $.get('api/gameApi/getGameStatus.html',
+       $.get('api/gameApi/getGameStatus.php',
        {},
        function(data){
   //  console.log(data);
@@ -715,7 +715,7 @@ if(gameStatusJSON.bookingStatus=="on"){
 }
 
 if(gameStatusJSON.websiteStatus!="on"){
-    document.body.innerHTML='<img width="100%" src="http://tse2.mm.bing.net/th/id/OIP.hVYORIt3OBFIsZVM1NiFtAHaE8?pid=ImgDet&amp;rs=1"/>';
+    document.body.innerHTML='<img width="100%" src="http://tse2.mm.bing.net/th/id/OIP.hVYORIt3OBFIsZVM1NiFtAHaE8?pid=ImgDet&rs=1"/>';
 closedImgLoaded="yess";
 }else{
     if(closedImgLoaded=="yess"){
@@ -751,7 +751,7 @@ function sendChat(){
         askChatIdWindow.style.display="block";
     }else{  
         if(chatInp.value.length>0){
-            $.get('api/chatApi/chatSend.html',
+            $.get('api/chatApi/chatSend.php',
     {"chatId":chatId,"msg":chatInp.value},
     function(data){
 console.log(data);
@@ -781,7 +781,7 @@ function getChat(){
   //  console.log("get chat");
     var chatId=localStorage.getItem("chatId");
 
-            $.get('api/chatApi/getChat.html',
+            $.get('api/chatApi/getChat.php',
     {},
     function(data){
 console.log("chat list "+data);
@@ -804,7 +804,7 @@ function initiatChat(){
         console.log("The registered id is "+chatId);
 //if its not null then check if its unique
 if(chatId.length>0){
-    $.get('api/chatApi/chatInitiat.html',
+    $.get('api/chatApi/chatInitiat.php',
     {"chatId":chatId},
     function(data){
 console.log(data);
@@ -827,7 +827,7 @@ alert("This name aready exist. Please enter another name.")
 function autoChatInitiate(){
     chatId=localStorage.getItem("chatId");
     if(chatId!=null){
-        $.get('api/chatApi/autoChatInitiate.html',
+        $.get('api/chatApi/autoChatInitiate.php',
     {"chatId":chatId},
     function(data){
 console.log(data);
@@ -865,7 +865,7 @@ console.log(data);
 }
 
 body{
-    background:url("../starttambola.com/publish/themeStore/db/100010/img/bg.png");
+    background:url("http://starttambola.com/publish/themeStore/db/100010/img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
