@@ -271,7 +271,7 @@ function searchKey(key){
     if(popWin1Status=="ticket"){
    url='php/searchTicket.html';
     }else{
-    url='php/searchAgent.php'; 
+    url='php/searchAgent.html'; 
     }
  
     $.get(url,
@@ -284,7 +284,7 @@ function searchKey(key){
 }
 
 function getAnouncement(){
-    $.get('php/getAnouncement.php',
+    $.get('php/getAnouncement.html',
     {},
     function(data){
 console.log("anouncement==>"+data);
@@ -297,7 +297,7 @@ function sendAnnouncement(){
   if(announceTa.value!=localStorage.getItem("announcement")){
     if(announceTa.value.length>0){
         saveAnounceBtnInp.value="saving...";
-        $.get('php/saveAnnouncement.php',
+        $.get('php/saveAnnouncement.html',
         {"announcement":announceTa.value},
         function(data){
         console.log("save anouncement==>"+data);
@@ -319,14 +319,14 @@ function sendAnnouncement(){
 }
 
 function loadLinkType(){
-    var domain=window.location.href.split("../../index.html")[2];
+    var domain=window.location.href.split("https://daynightonline.in/")[2];
     playerLinkInp.value=domain;
     adminLink2Inp.value=domain+"/admin";
     agentLinkInp.value=domain+"/agent";
 }
 
 function copy(linkType){
-    var domain=window.location.href.split("../../index.html")[2];
+    var domain=window.location.href.split("https://daynightonline.in/")[2];
     var btn= document.getElementById("copy"+linkType+"btn");
 if(linkType==1){
     navigator.clipboard.writeText(domain);
@@ -345,7 +345,7 @@ setTimeout(()=>{
 
 
 function shareLink(linkType){
-    var domain=window.location.href.split("../../index.html")[2];
+    var domain=window.location.href.split("https://daynightonline.in/")[2];
     var btn= document.getElementById("copy"+linkType+"btn");
 if(linkType==1){
     window.location="whatsapp://send?text=Player link is "+domain;
@@ -576,7 +576,7 @@ setInterval(()=>{
     getGameStatus();
 },3000);
 function getGameStatus(){
-    $.get('../../api/gameApi/getGameStatus.html',
+    $.get('https://daynightonline.in/api/gameApi/getGameStatus.php',
 {},
 function(data){
 ////console.log(data);
@@ -782,7 +782,7 @@ function getRenewJson(){
    //console.log(data);
    var json=JSON.parse(data);
 
-var host=window.location.href.split("../../index.html")[2];
+var host=window.location.href.split("https://daynightonline.in/")[2];
 hostNameInp.value=host;
 createdDateInp.value=json.createdDate;
 renewDateInp.value=json.renewDate;
@@ -1295,7 +1295,7 @@ alert("Please select atleast one ticket!");
 
 
     function numCaller(){
-        $.get('../../api/gameApi/generateWinTicket.html',
+        $.get('https://daynightonline.in/api/gameApi/generateWinTicket.php',
         {},
         function(data){
        // //console.log(data);
@@ -1308,7 +1308,7 @@ alert("Please select atleast one ticket!");
         updateCalledNum();
     },3000);
     function updateCalledNum(){
-        $.get('../../api/gameApi/getGameStatus.html',
+        $.get('https://daynightonline.in/api/gameApi/getGameStatus.php',
         {},
         function(data){
     //  //console.log(data);
@@ -1488,7 +1488,7 @@ setTimeout(function(){
         renderTitleBtn.innerHTML="LAST GAME TICKET";
         printType="lastTicket";
         showLastTicketBtn.innerHTML="LOADING...";
-        $.get('../commonApi/getLastTicket.html',
+        $.get('https://daynightonline.in/Ui/commonApi/getLastTicket.php',
         {},
         function(data){
 //console.log(data);
@@ -1512,7 +1512,7 @@ showLastTicketBtn.innerHTML="SHOW PREVIOUS TICKET";
         renderTitleBtn.innerHTML="LAST GAME WINNERS";
         printType="lastWinner";
         showLastWinnerBtn.innerHTML="LOADING...";
-        $.get('../commonApi/getLastWinner.html',
+        $.get('https://daynightonline.in/Ui/commonApi/getLastWinner.php',
         {},
         function(data){
 //console.log(data);
@@ -1546,7 +1546,7 @@ showLastWinnerBtn.innerHTML="SHOW PREVIOUS WINNER";
         renderTitleBtn.innerHTML="LAST GAME NUMBER";
         printType="lastNum";
         showLastNumBtn.innerHTML="LOADING...";
-        $.get('../commonApi/getLastNumber.html',
+        $.get('https://daynightonline.in/Ui/commonApi/getLastNumber.php',
         {},
         function(data){
 //console.log(data);
@@ -1569,7 +1569,7 @@ showLastNumBtn.innerHTML="SHOW PREVIOUS NUMBER";
         renderTitleBtn.innerHTML="LAST GAME BUSINESS";
         printType="lastBusiness";
         showLastBusinessBtn.innerHTML="LOADING...";
-        $.get('../commonApi/getLastBusinessaa94.html?type=admin',
+        $.get('https://daynightonline.in/Ui/commonApi/getLastBusiness.php?type=admin',
         {},
         function(data){
 //console.log(data);
@@ -1717,18 +1717,18 @@ window.location=payInfoJson.payLink;
      }
 function print(){
     
-    window.location="../commonApi/04_03_2023%2008_25_30%20AM47d9.pdf?type="+printType+"&sender=admin";
+    window.location="https://daynightonline.in/Ui/commonApi/printPdf.php?type="+printType+"&sender=admin";
 }
   
 
     function renew(){
-        var host=window.location.href.split("../../index.html")[2];
+        var host=window.location.href.split("https://daynightonline.in/")[2];
         window.location="https://starttambola.com/publish/renew.html?host="+host;
     }
     
 
     
     function themeStore(){
-        var host=window.location.href.split("../../index.html")[2];
+        var host=window.location.href.split("https://daynightonline.in/")[2];
         window.location="http://starttambola.com/publish/themeStore/home.html?domain="+host+'&sKey='+adminPassInp.value;
     }
